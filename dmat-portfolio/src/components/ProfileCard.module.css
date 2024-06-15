@@ -1,0 +1,23 @@
+/* 全体*/
+.root {
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* profile画像*/
+.profileIcon {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* 名前*/
+.name {
+  width: 100%;
+  padding: 24px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}

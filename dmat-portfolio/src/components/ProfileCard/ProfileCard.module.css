@@ -1,6 +1,6 @@
 /* 全体*/
 .root {
-  width: calc(100% - 32px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -16,12 +16,22 @@
   border-radius: 0.75em 0.75em 0 0;
 }
 
-/* 名前*/
-.name {
+/* 自己紹介文エリア全体*/
+.profileWrapper {
   width: 100%;
-  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 16px;
+} 
+
+/* text*/
+.text {
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 24px;
+}
+
+.text:not(:first-child) {
+  font-size: 16px;
 }

@@ -3,6 +3,5 @@
   width: 100svw;
   height: 100svh;
   position: relative;
-  overflow-y: auto;
   box-sizing: border-box;
 }

@@ -3,13 +3,17 @@
   width: calc(100% - 32px);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 0.75em;
+  transition: all 0.2s ease-in-out;
 }
 
 /* profile画像*/
 .profileIcon {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 12/9;
   object-fit: cover;
+  border-radius: 0.75em 0.75em 0 0;
 }
 
 /* 名前*/

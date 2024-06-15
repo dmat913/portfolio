@@ -1,0 +1,47 @@
+/* 全体*/
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 20px;
+}
+
+/* react紹介*/
+.reactWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* reactIcon表示*/
+.reactIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 60px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  background-color: #20232A;
+  padding-left: 16px;
+}
+
+/* reactIconImage*/
+.reactIcon > img {
+  width: 40px;
+}
+
+/* reactIconText*/
+.reactIcon > span {
+  color: #61DAFB;
+  font-size: 20px;
+}
+
+/* サンプルコード全体*/
+.codeWrapper {
+  width: 100%;
+  padding: 16px !important;
+  margin: 0;
+  /* background: rgb(40, 44, 52) ; */
+}

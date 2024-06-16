@@ -2,18 +2,43 @@
 .root {
   display: flex;
   flex-direction: column;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  height: 316px;
+  min-height: 316px;
 }
 
 .text {
   font-size: 20px;
 }
 
-/* react紹介*/
-.reactWrapper {
+.frontWrapper,.backWrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  transition: all 0.8s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+.backWrapper {
+  transform: rotateY(-180deg);
+}
+
+/* ホバー時のカード裏面 */
+/* .root:hover .backWrapper {
+  transform: rotateY(180deg);
+} */
+
+/* ホバー時のカード表面 */
+/* .root:hover .frontWrapper {
+  transform: rotateY(0);
+} */
 
 /* reactIcon表示*/
 .reactIcon {
@@ -21,6 +46,7 @@
   align-items: center;
   gap: 8px;
   height: 60px;
+  min-height: 60px;
   width: 100%;
   border-radius: 8px 8px 0 0;
   background-color: #20232A;
@@ -44,4 +70,7 @@
   padding: 16px !important;
   margin: 0;
   /* background: rgb(40, 44, 52) ; */
+  height: 256px;
+  min-height: 256px;
+  overflow: hidden !important;
 }

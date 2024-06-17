@@ -1,0 +1,28 @@
+/* 全体*/
+.root {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px;
+  position: relative;
+  background-color: #FAF0E6;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+/* html全体*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.wrapper > img {
+  width: 150px;
+  height: 150px;
+}

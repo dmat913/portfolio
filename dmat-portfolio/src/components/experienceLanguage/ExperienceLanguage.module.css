@@ -7,6 +7,8 @@
   position: relative;
   height: 316px;
   min-height: 316px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .text {

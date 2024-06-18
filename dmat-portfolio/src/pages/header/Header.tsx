@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from "./Header.module.css";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   // pageTab押下時
   const handleClickPageTab = (type: string) => {
@@ -12,8 +13,8 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <span onClick={() => handleClickPageTab("/portfolio/")}>About</span>
-      <span onClick={() => handleClickPageTab("/portfolio/skills")}>Skills</span>
+      <span className={location.pathname === "/portfolio/" ? styles.active : ""} onClick={() => handleClickPageTab("/portfolio/")}>About</span>
+      <span className={location.pathname === "/portfolio/skills" ? styles.active : ""} onClick={() => handleClickPageTab("/portfolio/skills")}>Skills</span>
       <span>Works</span>
     </header>
   )

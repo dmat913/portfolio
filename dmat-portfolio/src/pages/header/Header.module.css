@@ -13,3 +13,11 @@
   padding: 16px;
   gap: 12px;
 }
+
+.header > span:not(:last-child):hover,.header > span:not(:last-child):active,.active {
+  color: #00BFFF;
+}
+
+.header > span:last-child {
+  opacity: 0.3;
+}

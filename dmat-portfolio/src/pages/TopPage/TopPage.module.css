@@ -8,4 +8,5 @@
   flex-wrap: wrap;
   gap: 24px;
   overflow-y: auto;
+  background-color: #FAF0E6;
 }

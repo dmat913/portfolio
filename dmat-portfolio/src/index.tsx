@@ -3,20 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import TopPage from './pages/TopPage/TopPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    {/* <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<TopPage />} />
-        <Route path='*' element={<div>Not Found</div>} />
-      </Routes>
-    </BrowserRouter> */}
     <App />
   </React.StrictMode>
 );

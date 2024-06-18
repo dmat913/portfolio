@@ -22,10 +22,8 @@ function SkillCard({skillCardInfo}: SkillCardProps) {
         // 画面内検知時の処理
         if (entry.isIntersecting) {
           target.style.height = skillCardInfo.height;
-          target.style.transform = "scale(1)";
         } else {
           target.style.height = "214px";
-          target.style.transform = "scale(0)";
         }
       });
     };

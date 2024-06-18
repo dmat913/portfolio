@@ -27,11 +27,13 @@ function SkillCard({skillCardInfo}: SkillCardProps) {
           console.log("画面内", skillCardInfo.type);
           setIsDisplayText(true);
           target.style.height = skillCardInfo.height;
+          target.style.transform = "scale(1)";
           // TODO: 画面外検知時の処理
         } else {
           console.log("画面外", skillCardInfo.type);
           setIsDisplayText(false);
           target.style.height = "214px";
+          target.style.transform = "scale(0.1)";
         }
       });
     };

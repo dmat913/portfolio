@@ -1,7 +1,8 @@
 /* 全体*/
 .root {
   width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
   position: relative;
   box-sizing: border-box;
+  background-color: #FAF0E6;
 }

@@ -11,7 +11,16 @@ function TopPage() {
       {/* <ProfileCard /> */}
       {/* 経験言語 */}
       {/* <ExperienceLanguage /> */}
-      <span>山口大貴</span>
+      <div>
+        <span>山口大貴</span>
+        <span>1998年9月13日 25歳</span>
+        <div>
+          <span>大学</span><span>東京国際大学</span>
+        </div>
+        <div>
+          <span>出身</span><span>埼玉県</span>
+        </div>
+      </div>
     </div>
   )
 }

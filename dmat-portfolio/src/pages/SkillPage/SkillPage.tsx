@@ -19,29 +19,34 @@ const SkillCardInfoList: SkillCardInfo[] = [{
   src: HTMLIcon,
   text: "アウトラインにこだわり実装する事を意識しています。CSSでスタイリングがしやすいよう適切に要素を配置する事が大切だと思っています。",
   height: "330px",
+  star: "⭐️⭐️⭐️⭐️☆"
 },
 {
   type: "CSS",
   src: CSSIcon,
   text: "基本的なスタイリングには自信があります。どのページでも表示が崩れにくくなる事を意識して実装しています。",
   height: "302px",
+  star: "⭐️⭐️⭐️⭐️☆"
   },
   {
     type: "JS",
     src: JSIcon,
     text: "基本的な構文は理解する事が出来ると思います。バニラjavascriptでの開発経験はありません。",
     height: "302px",
+    star: "⭐️⭐️⭐️☆☆"
   },
   {
     type: "REACT",
     src: ReactIcon,
     text: "3年間開発経験があります。コメントをたくさん残すなど他の人でも読みやすいコードを意識して実装しています。複数のシステム開発を1人で行った経験があります。",
     height: "352px",
+    star: "⭐️⭐️⭐️⭐️⭐️"
   },{
-    type: "GIT",
+    type: "GITHUB",
     src: GitIcon,
-    text: "バージョン管理のツールとしてはGITを使用していました。基本的なコマンドやGITの仕組みなどは理解していると思います。レビュー経験もあります。",
+    text: "バージョン管理のツールとしてはGITHUBを使用していました。基本的なコマンドやGITの仕組みなどは理解していると思います。レビュー経験もあります。",
     height: "352px",
+    star: "⭐️⭐️⭐️⭐️☆"
   }
 ]
 

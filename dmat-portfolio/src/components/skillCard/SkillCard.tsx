@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef, useState } from 'react';
+import React, { memo, useEffect, useRef } from 'react';
 import styles from "./SkillCard.module.css";
 import { SkillCardInfo } from '../../types/skill';
 
@@ -10,9 +10,6 @@ interface SkillCardProps {
 function SkillCard({skillCardInfo}: SkillCardProps) {
   // 対象DOM要素
   const targetRef = useRef<HTMLDivElement>(null);
-
-  // テキスト欄表示flag
-  const [isDisplayText, setIsDisplayText] = useState<boolean>(false);
   
   useEffect(() => {
     // 対象要素取得
@@ -24,16 +21,11 @@ function SkillCard({skillCardInfo}: SkillCardProps) {
       entries.forEach(entry => {
         // 画面内検知時の処理
         if (entry.isIntersecting) {
-          console.log("画面内", skillCardInfo.type);
-          setIsDisplayText(true);
           target.style.height = skillCardInfo.height;
           target.style.transform = "scale(1)";
-          // TODO: 画面外検知時の処理
         } else {
-          console.log("画面外", skillCardInfo.type);
-          setIsDisplayText(false);
           target.style.height = "214px";
-          target.style.transform = "scale(0.1)";
+          target.style.transform = "scale(0)";
         }
       });
     };
@@ -50,7 +42,8 @@ function SkillCard({skillCardInfo}: SkillCardProps) {
   return (
     <div ref={targetRef} className={styles.root}>
       <img src={skillCardInfo.src} alt='HTMLIcon' />
-      {isDisplayText && <span>{skillCardInfo.text}</span>}
+      <span className={styles.star}>{skillCardInfo.star}</span>
+      <span>{skillCardInfo.text}</span>
     </div>
   )
 }

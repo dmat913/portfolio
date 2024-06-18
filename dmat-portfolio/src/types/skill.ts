@@ -8,4 +8,6 @@ export interface SkillCardInfo {
   text: string;
   // 要素の高さ
   height: string;
+  // 星
+  star: string;
 }

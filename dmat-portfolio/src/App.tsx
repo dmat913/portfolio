@@ -9,9 +9,9 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path='/' element={<TopPage />} />
-          <Route path='/skills' element={<SkillPage />} />
-          <Route path='*' element={<Navigate to="/" />} />
+          <Route path='/portfolio/' element={<TopPage />} />
+          <Route path='/portfolio/skills' element={<SkillPage />} />
+          <Route path='*' element={<Navigate to="/portfolio/" />} />
         </Routes>
       </Layout>
     </BrowserRouter>

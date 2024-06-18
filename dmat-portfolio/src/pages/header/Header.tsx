@@ -12,8 +12,8 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <span onClick={() => handleClickPageTab("/")}>About</span>
-      <span onClick={() => handleClickPageTab("/skills")}>Skills</span>
+      <span onClick={() => handleClickPageTab("/portfolio/")}>About</span>
+      <span onClick={() => handleClickPageTab("/portfolio/skills")}>Skills</span>
       <span>Works</span>
     </header>
   )

@@ -12,12 +12,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
+  background: linear-gradient(to bottom, #003153, #004966);
 }
 
 /* githubIcon*/
 .header a,.header img {
   height: 100%;
   border-radius: 4px;
+}
+
+/* icons*/
+.leftDiv {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 100%;
 }
 
 /* tab*/

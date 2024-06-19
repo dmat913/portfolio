@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import { useLocation, useNavigate } from 'react-router-dom';
 import GithubIcon from "../../image/github.webp";
 import InstagramIcon from "../../image/instagram.png";
+import Typography from '../../common/components/Typography';
 
 function Header() {
   const navigate = useNavigate();
@@ -20,9 +21,23 @@ function Header() {
         <a rel="noreferrer" target="_blank" href='https://www.instagram.com/2ydk09s'><img src={InstagramIcon} alt='' /></a>
         </div>
       <div className={styles.rightDiv}>
-        <span className={location.pathname === "/portfolio" ? styles.active : ""} onClick={() => handleClickPageTab("/portfolio")}>About</span>
-        <span className={location.pathname === "/portfolio/skills" ? styles.active : ""} onClick={() => handleClickPageTab("/portfolio/skills")}>Skills</span>
-        <span>Works</span>
+        <Typography
+          color="#800020"
+          fontType='bold'
+          className={location.pathname === "/portfolio" ? styles.active : ""}
+          onClick={() => handleClickPageTab("/portfolio")}
+        >
+          About
+        </Typography>
+        <Typography
+          color="#800020"
+          fontType='bold'
+          className={location.pathname === "/portfolio/skills" ? styles.active : ""}
+          onClick={() => handleClickPageTab("/portfolio/skills")}
+        >
+          Skills
+        </Typography>
+        <Typography fontType='bold' color="#800020">Works</Typography>
       </div>
     </header>
   )

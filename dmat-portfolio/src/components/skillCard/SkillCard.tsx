@@ -1,6 +1,7 @@
-import React, { memo, useEffect, useRef } from 'react';
+import React, { memo, useEffect, useRef, useState } from 'react';
 import styles from "./SkillCard.module.css";
 import { SkillCardInfo } from '../../types/skill';
+import Typography from '../../common/components/Typography';
 
 interface SkillCardProps {
   // 表示カード情報
@@ -10,6 +11,8 @@ interface SkillCardProps {
 function SkillCard({skillCardInfo}: SkillCardProps) {
   // 対象DOM要素
   const targetRef = useRef<HTMLDivElement>(null);
+  // 
+  const [isOpenCard,setIsOpenCard] = useState<boolean>(false)
   
   useEffect(() => {
     // 対象要素取得
@@ -22,26 +25,28 @@ function SkillCard({skillCardInfo}: SkillCardProps) {
         // 画面内検知時の処理
         if (entry.isIntersecting) {
           target.style.height = skillCardInfo.height;
+          target.style.transform = "scale(1)";
+          setIsOpenCard(true)
         } else {
-          target.style.height = "214px";
+          target.style.transform = "scale(0)";
         }
       });
     };
     // インスタンス生成
     const io = new IntersectionObserver(callBack);
     // 監視開始
-    io.observe(target);
+    if (!isOpenCard) io.observe(target);
     return () => {
       io.unobserve(target);
     }
     // eslint-disable-next-line
-  }, [])
+  }, [isOpenCard])
   
   return (
     <div ref={targetRef} className={styles.root}>
       <img src={skillCardInfo.src} alt='HTMLIcon' />
-      <span className={styles.star}>{skillCardInfo.star}</span>
-      <span>{skillCardInfo.text}</span>
+      <Typography size={20}>{skillCardInfo.star}</Typography>
+      <Typography size={14}>{skillCardInfo.text}</Typography>
     </div>
   )
 }

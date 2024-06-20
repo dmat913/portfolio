@@ -29,10 +29,6 @@
   gap: 12px;
 }
 
-.rightDiv > span:not(:last-child):hover,.rightDiv > span:not(:last-child):active,.active {
+.rightDiv > span:hover,.rightDiv > span:active,.active {
   color: #008080 !important;
-}
-
-.rightDiv > span:last-child {
-  opacity: 0.3;
 }

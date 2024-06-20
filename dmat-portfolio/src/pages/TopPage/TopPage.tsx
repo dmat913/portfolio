@@ -63,6 +63,16 @@ function TopPage() {
           </div>
         </div>
       </section>
+      <section className={styles.wrapper}>
+        <Typography size={20} fontType="bold">
+          趣味
+        </Typography>
+        <div className={styles.contents}>
+          <Typography size={14}>
+            サッカー,サウナ
+          </Typography>
+        </div>
+      </section>
     </div>
   );
 }

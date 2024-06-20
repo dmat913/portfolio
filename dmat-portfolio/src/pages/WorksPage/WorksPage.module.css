@@ -1,0 +1,81 @@
+/* 全体*/
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  padding: 16px;
+}
+
+/* サムネイル*/
+.img {
+  width: 100%;
+  transition: all 0.4s;
+  border: 1px solid #DCDCDC;
+}
+
+/* コンテンツ全体*/
+.contentsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* コンテンツ*/
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid #778899;
+  padding-bottom: 24px;
+}
+
+/* 開発期間*/
+.period ,.features{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.period {
+  border-bottom: 1px solid #778899;
+  padding-bottom: 24px;
+}
+
+/* 使用技術*/
+.skillsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #778899;
+  padding-bottom: 24px;
+}
+
+/* 使用技術icon全体*/
+.skillsIconWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* 言語icon*/
+.skillsIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+/* STEP2*/
+.step2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* STEP2説明*/
+.explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
